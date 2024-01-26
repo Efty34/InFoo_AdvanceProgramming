@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1175.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_design.rmaController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="1175.0" styleClass="playerINDheader" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#clubpage" prefHeight="60.0" prefWidth="60.0" styleClass="transparent" stylesheets="@style.css">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/double-arrows%20white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label text="Real Madrid CF" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="250.0" styleClass="playerINDrest" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="dataBtn" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="info" stylesheets="@style.css" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/collection.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane layoutX="10.0" layoutY="496.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="107.0" layoutY="-9.0" prefHeight="26.0" prefWidth="37.0" text="Data" textFill="WHITE">
+                     <font>
+                        <Font name="Gadugi Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </children></Pane>
+            <Button fx:id="rankingBtn" layoutX="85.0" layoutY="320.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="info" stylesheets="@style.css" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/ranking%20(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane layoutX="10.0" layoutY="290.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="98.0" layoutY="-9.0" prefHeight="26.0" prefWidth="71.0" text="Ranking" textFill="WHITE">
+                     <font>
+                        <Font name="Gadugi Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </children></Pane>
+            <Button fx:id="squadBtn" layoutX="85.0" layoutY="340.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="info" stylesheets="@style.css" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/soccer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane layoutX="10.0" layoutY="355.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="102.0" layoutY="-8.0" prefHeight="26.0" prefWidth="53.0" text="Squad" textFill="WHITE">
+                     <font>
+                        <Font name="Gadugi Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </children></Pane>
+            <Button fx:id="stuffBtn" layoutX="85.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="info" stylesheets="@style.css" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/strategy%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane layoutX="10.0" layoutY="420.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="105.0" layoutY="-9.0" prefHeight="26.0" prefWidth="41.0" text="Stuff" textFill="WHITE">
+                     <font>
+                        <Font name="Gadugi Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets top="6.0" />
+                     </padding>
+                  </Label>
+               </children></Pane>
+            <Button fx:id="achiBtn" layoutX="85.0" layoutY="380.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="info" stylesheets="@style.css" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/team.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label text="Achievements" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane prefHeight="600.0" prefWidth="400.0" styleClass="rmabg" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="squad" prefHeight="600.0" prefWidth="400.0" visible="false">
+              <columns>
+                <TableColumn fx:id="position" maxWidth="500.0" minWidth="50.0" prefWidth="260.0" text="Position" />
+                <TableColumn fx:id="name" minWidth="50.0" prefWidth="614.0" text="Name" />
+              </columns>
+            </TableView>
+            <TableView fx:id="stuff" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="400.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="positionStuff" maxWidth="500.0" minWidth="50.0" prefWidth="260.0" text="Position" />
+                  <TableColumn fx:id="nameStuff" minWidth="50.0" prefWidth="614.0" text="Name" />
+               </columns>
+            </TableView>
+            <TableView fx:id="rankingTable" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="400.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="ranking" maxWidth="500.0" minWidth="50.0" prefWidth="260.0" text="Ranking" />
+                  <TableColumn fx:id="rank" minWidth="50.0" prefWidth="614.0" text="Rank" />
+               </columns>
+            </TableView>
+            <TableView fx:id="achievementtable" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="400.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="troname" maxWidth="500.0" minWidth="50.0" prefWidth="260.0" text="Trophy Name" />
+                  <TableColumn fx:id="trotimes" minWidth="50.0" prefWidth="614.0" text="Times" />
+               </columns>
+            </TableView>
+            <TableView fx:id="dataTable" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="400.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="concol" maxWidth="500.0" minWidth="50.0" prefWidth="260.0" text="Content" />
+                  <TableColumn fx:id="infocol" minWidth="50.0" prefWidth="614.0" text="Information" />
+               </columns>
+            </TableView>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

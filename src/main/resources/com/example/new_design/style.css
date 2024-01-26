@@ -1,0 +1,166 @@
+.backgrnd{
+    -fx-background-image: url('../Image/final69.png');
+    /*-fx-background-image: url('../Image/bg5.png');*/
+    -fx-background-size: cover;
+}
+.playerbg{
+    /*-fx-background-color:#9F91CC;*/
+    -fx-background-color:#4B5D67;
+}
+.playersidebar{
+    -fx-background-color:#A2B5BB;
+}
+.playersrcbar{
+    -fx-background-color:#4E6E81;
+}
+.playerINDheader{
+    -fx-background-color:#222222;
+}
+.playerINDrest{
+    -fx-background-color:#434242;
+}
+.accountbox{
+    -fx-background-color:#5a7a67;
+    /*-fx-background-color:#192655;*/
+
+    /*-fx-background-radius: 25;
+    -fx-background-color:#BA5C5C;*/
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.search-button{
+    -fx-background-color: #F2E2B4;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+}
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+    -fx-cursor: hand;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-cursor: hand;
+}
+
+.playerbgheader{
+    -fx-background-color:#BA5C5C;
+}
+.searchBox{
+    -fx-background-color: #5a7a67;
+    -fx-background-radius: 10;
+}
+.searchButton{
+    -fx-background-color: #F2E2B4;
+    -fx-background-radius: 10;
+}
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.close:hover{
+    -fx-background-color: #fb3d63;
+}
+.clubSearchBox{
+    -fx-background-color: #99B080;
+}
+.clubHeader{
+    -fx-background-color: #5C8374;
+}
+.clubBg{
+    -fx-background-color:#FCE9F1;
+}
+.rmabg{
+    -fx-background-image: url('../Image/rma4.png');
+    -fx-background-size: cover;
+}
+.barcaBg{
+    -fx-background-image: url('../Image/barca.jpg');
+    -fx-background-size: cover;
+}
+.manuBg{
+    -fx-background-image: url('../Image/manu.jpg');
+    -fx-background-size: cover;
+}
+.cityBg{
+    -fx-background-image: url('../Image/city.png');
+    -fx-background-size: cover;
+}
+.bayernBg{
+    -fx-background-image: url('../Image/bayernbg.jpg');
+    -fx-background-size: cover;
+}
+.arsenBg{
+    -fx-background-image: url('../Image/gunner2.jpg');
+    -fx-background-size: cover;
+}
+.liverBg{
+    -fx-background-image: url('../Image/liverpoolbg.jpg');
+    -fx-background-size: cover;
+}
+.chelseaBg{
+    -fx-background-image: url('../Image/chelbg.jpg');
+    -fx-background-size: cover;
+}
+.psgBg{
+    -fx-background-image: url('../Image/psgbg.jpg');
+    -fx-background-size: cover;
+}
+.bvbBg{
+    -fx-background-image: url('../Image/bvbwall.jpg');
+    -fx-background-size: cover;
+}
+.interBg{
+    -fx-background-image: url('../Image/intermillan.jpg');
+    -fx-background-size: cover;
+}
+.acBg{
+    -fx-background-image: url('../Image/acmillambg.jpg');
+    -fx-background-size: cover;
+}
+.juveBg{
+    -fx-background-image: url('../Image/juve.jpg');
+    -fx-background-size: cover;
+}
+.atmBg{
+    -fx-background-image: url('../Image/atma.jpg');
+    -fx-background-size: cover;
+}
+.ajaxBg{
+    -fx-background-image: url('../Image/ajaxxx.jpg');
+    -fx-background-size: cover;
+}
+.info{
+    -fx-background-color: transparent;
+    -fx-background-radius: 40;
+    -fx-cursor: hand;
+}
+.info:hover{
+    -fx-background-color: #2ce1ef;
+}
+
+.leagueheader{
+    -fx-background-color:#27374D;
+}
+
+.leaguehside{
+    -fx-background-color:#96B6C5;
+}
+.leaguemiddle{
+    -fx-background-color:#ADC4CE;
+}
+.collationSide{
+    -fx-background-color:#537188;
+}
+.collationHeader{
+    -fx-background-color:#374259;
+}
+.collationCombo{
+    -fx-background-color: #C8F2EF;
+    -fx-background-radius: 20;
+}
+

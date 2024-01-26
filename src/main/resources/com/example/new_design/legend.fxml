@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1175.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_design.legendController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1175.0" styleClass="leagueheader" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#mainpage" prefHeight="40.0" prefWidth="40.0" styleClass="transparent" stylesheets="@style.css" text="Button">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/double-arrows%20white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label text="Hall of Fames" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="391.0" styleClass="playersrcbar" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Ricardo dos Santos Kaka" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../Image/1252178.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="149.0" layoutY="10.0" text="Ronaldo de Assis Moreira" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="81.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../Image/1174714.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="94.0" layoutY="211.0" text="Zinedine Zidane" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="81.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../Image/1252278.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="391.0" styleClass="playersrcbar" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Oliver Kahn" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/kahn_04_ima_190320.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="149.0" layoutY="10.0" text="Ronaldo Nazário" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="81.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/1252271.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="94.0" layoutY="211.0" text="Luis Figo" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="81.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Screenshot%202023-11-11%20232114.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="794.0" layoutY="10.0" prefHeight="200.0" prefWidth="391.0" styleClass="playersrcbar" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Paolo Maldini" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/1248344.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="149.0" layoutY="10.0" text="David Beckham" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="81.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/960901.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="94.0" layoutY="211.0" text="Andrés Iniesta" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="81.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/1138615.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

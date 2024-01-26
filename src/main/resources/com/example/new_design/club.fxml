@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1175.0" styleClass="playerbackgrnd" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_design.clubController">
+   <top>
+      <HBox prefHeight="60.0" prefWidth="1175.0" styleClass="clubHeader" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="backBtn" mnemonicParsing="false" onAction="#mainpage" prefHeight="50.0" prefWidth="50.0" styleClass="transparent" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/double-arrows%20white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1257.0">
+               <children>
+                  <Label text="Clubs List" textFill="WHITE">
+                     <font>
+                        <Font name="Calisto MT Bold" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children></HBox>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="640.0" prefWidth="350.0" styleClass="clubHeader" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="350.0" styleClass="clubSearchBox" stylesheets="@style.css">
+               <children>
+                  <TextField fx:id="srcclubname" prefHeight="40.0" prefWidth="250.0" promptText="Enter Club Name" styleClass="transparent" stylesheets="@style.css">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri" size="19.0" />
+                     </font></TextField>
+                  <Button fx:id="srcclubBtn" mnemonicParsing="false" onAction="#searchBTN" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@style.css" text="Search">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Pane prefHeight="136.0" prefWidth="350.0" VBox.vgrow="ALWAYS" />
+            <ImageView fx:id="srcclubimg" fitHeight="310.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/football.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="120.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="clubGoBtn" mnemonicParsing="false" onAction="#goButtonClicked" prefHeight="70.0" prefWidth="350.0" styleClass="close" stylesheets="@style.css" text="Go!!!" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="1500.0" styleClass="clubBg" stylesheets="@style.css">
+               <children>
+                  <HBox layoutX="32.0" layoutY="20.0" prefHeight="300.0" prefWidth="1500.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/realmadrid.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="rma" mnemonicParsing="false" onAction="#realmadrid" prefHeight="60.0" prefWidth="160.0" styleClass="transparent" stylesheets="@style.css" text="Real Madrid">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/barcelona.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="barcaBtn" mnemonicParsing="false" onAction="#barcelona" prefHeight="60.0" prefWidth="165.0" styleClass="transparent" stylesheets="@style.css" text="FC Barcelona">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="260.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/manchesterunited.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="manuBtn" mnemonicParsing="false" onAction="#manutd" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="Manchester United">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="511.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/manchestercity.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cityBtn" mnemonicParsing="false" onAction="#mancity" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="Manchester City">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="761.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/bayern.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="bayernBtn" mnemonicParsing="false" onAction="#bayernmun" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="Bayern Munich">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="1012.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/arsenal.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="arsenBtn" mnemonicParsing="false" onAction="#arsen" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="Arsenal">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="1500.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="300.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/liverpool.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="livBtn" mnemonicParsing="false" onAction="#liverpool" prefHeight="60.0" prefWidth="160.0" styleClass="transparent" stylesheets="@style.css" text="Liverpool FC">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/chelsea.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="chelBtn" mnemonicParsing="false" onAction="#chelsea" prefHeight="60.0" prefWidth="165.0" styleClass="transparent" stylesheets="@style.css" text="Chelsea FC">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="260.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/psg.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="psgBtn" mnemonicParsing="false" onAction="#paris" prefHeight="60.0" prefWidth="198.0" styleClass="transparent" stylesheets="@style.css" text="Paris Saint-Germain">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="511.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/bvb.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="bvbBtn" mnemonicParsing="false" onAction="#bvb" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="Borussia Dortmund">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="761.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/inter.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="interBtn" mnemonicParsing="false" onAction="#inter" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="Inter Milan">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="1012.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/ac.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="acBtn" mnemonicParsing="false" onAction="#ac" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="AC Milan">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="310.0" prefHeight="300.0" prefWidth="1500.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="600.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/juventus.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="juveBtn" mnemonicParsing="false" onAction="#juve" prefHeight="60.0" prefWidth="160.0" styleClass="transparent" stylesheets="@style.css" text="Juventus FC">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/atm.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="atmBtn" mnemonicParsing="false" onAction="#atm" prefHeight="60.0" prefWidth="202.0" styleClass="transparent" stylesheets="@style.css" text="Athletico Madrid">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="260.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/afcajax.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="ajaxBtn" mnemonicParsing="false" onAction="#ajax" prefHeight="60.0" prefWidth="198.0" styleClass="transparent" stylesheets="@style.css" text="AFC Ajax">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="511.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0" visible="false">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/sevilla.png" />
+                                 </image>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="Sevilla FC">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="761.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0" visible="false">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/napoli.png" />
+                                 </image>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="SSC Napoli">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="1012.0" layoutY="10.0" prefHeight="300.0" prefWidth="250.0" visible="false">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/porto.png" />
+                                 </image>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="190.0" styleClass="transparent" stylesheets="@style.css" text="FC Porto">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

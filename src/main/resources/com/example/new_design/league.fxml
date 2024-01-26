@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1175.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_design.leagueController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="1175.0" styleClass="leagueheader" stylesheets="@style.css">
+         <children>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#mainpage" prefHeight="40.0" prefWidth="40.0" styleClass="transparent" stylesheets="@style.css">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/double-arrows%20white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label text="Leagues List" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="649.0" prefWidth="1175.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="649.0" prefWidth="391.0" styleClass="leaguehside" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="English Premier League">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="350.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/epl.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="eplBtn" mnemonicParsing="false" onAction="#eplpage" prefHeight="50.0" prefWidth="300.0" styleClass="close" stylesheets="@style.css" text="Explore!!!">
+                     <font>
+                        <Font name="Wingdings" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="649.0" prefWidth="391.0" styleClass="leaguemiddle" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Champions League">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="350.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/cl.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="clBtn" mnemonicParsing="false" onAction="#ucl" prefHeight="50.0" prefWidth="300.0" styleClass="close" stylesheets="@style.css" text="Explore!!!">
+                     <font>
+                        <Font name="Wingdings" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="401.0" layoutY="10.0" prefHeight="649.0" prefWidth="391.0" styleClass="leaguehside" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="La Liga">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="350.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/laliga.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="laBtn" mnemonicParsing="false" onAction="#laliga" prefHeight="50.0" prefWidth="300.0" styleClass="close" stylesheets="@style.css" text="Explore!!!">
+                     <font>
+                        <Font name="Wingdings" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

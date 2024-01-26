@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1175.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_design.laligaController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="1175.0" styleClass="leaguehside" stylesheets="@style.css" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="backBtn" mnemonicParsing="false" onAction="#leaguepage" prefHeight="50.0" prefWidth="50.0" styleClass="transparent" stylesheets="@style.css">
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Image/double-arrows.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label text="La Liga">
+                    <font>
+                        <Font name="Microsoft YaHei Bold" size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox alignment="CENTER" prefHeight="649.0" prefWidth="350.0" styleClass="leagueheader" stylesheets="@style.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="180.0" prefWidth="350.0">
+                    <children>
+                        <Label text="2019-20 Season" textFill="WHITE">
+                            <font>
+                                <Font name="Gadugi Bold" size="26.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="team2021Btn" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="120.0" styleClass="info" stylesheets="@style.css" text="Team List" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Eras Bold ITC" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="sum2021Btn" layoutX="125.0" layoutY="48.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="120.0" styleClass="info" stylesheets="@style.css" text="Summary" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Eras Bold ITC" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="350.0">
+                    <children>
+                        <Label text="2018-19 Season" textFill="WHITE">
+                            <font>
+                                <Font name="Gadugi Bold" size="26.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="team1819Btn1" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="120.0" styleClass="info" stylesheets="@style.css" text="Team List" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Eras Bold ITC" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="sum1819Btn1" layoutX="125.0" layoutY="48.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="120.0" styleClass="info" stylesheets="@style.css" text="Summary" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Eras Bold ITC" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="teamTable" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="teamInd" prefWidth="105.06664884090424" text="Index" />
+                        <TableColumn fx:id="teamName" prefWidth="387.19998931884766" text="Name" />
+                        <TableColumn fx:id="teamCode" prefWidth="124.80001831054688" text="Code" />
+                        <TableColumn fx:id="teamCountry" prefWidth="210.39990234375" text="Country" />
+                    </columns>
+                </TableView>
+                <TableView fx:id="sumTable" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="sumInd" prefWidth="90.66656339168549" text="Index" />
+                        <TableColumn fx:id="sumRou" prefWidth="121.33341217041016" text="Round" />
+                        <TableColumn fx:id="SumDate" prefWidth="103.199951171875" text="Date" />
+                        <TableColumn fx:id="SumT1" prefWidth="143.73333740234375" text="Team1" />
+                        <TableColumn fx:id="sumT2" prefWidth="119.46658325195312" text="Team2" />
+                        <TableColumn fx:id="sumT1s" prefWidth="110.39996337890625" text="Team1 Score" />
+                        <TableColumn fx:id="sumT2s" prefWidth="136.533203125" text="Team2 Score" />
+                    </columns>
+                </TableView>
+                <TableView fx:id="teamTable1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="teamInd1" prefWidth="105.06664884090424" text="Index" />
+                        <TableColumn fx:id="teamName1" prefWidth="387.19998931884766" text="Name" />
+                        <TableColumn fx:id="teamCode1" prefWidth="124.80001831054688" text="Code" />
+                        <TableColumn fx:id="teamCountry1" prefWidth="210.39990234375" text="Country" />
+                    </columns>
+                </TableView>
+                <TableView fx:id="sumTable1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="sumInd1" prefWidth="90.66656339168549" text="Index" />
+                        <TableColumn fx:id="sumRou1" prefWidth="121.33341217041016" text="Round" />
+                        <TableColumn fx:id="SumDate1" prefWidth="103.199951171875" text="Date" />
+                        <TableColumn fx:id="SumT11" prefWidth="143.73333740234375" text="Team1" />
+                        <TableColumn fx:id="sumT21" prefWidth="119.46658325195312" text="Team2" />
+                        <TableColumn fx:id="sumT1s1" prefWidth="110.39996337890625" text="Team1 Score" />
+                        <TableColumn fx:id="sumT2s1" prefWidth="136.533203125" text="Team2 Score" />
+                    </columns>
+                </TableView>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>
